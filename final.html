@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+        <title>Hospital Registration</title>
+        <link rel="stylesheet" type="text/css"
+         href="final.css"> 
+		 <link rel="stylesheet" href="home_css/home_components.css">
+      <link rel="stylesheet" href="home_css/home_responsee.css">
+      <link rel="stylesheet" href="home_css/home_template-style.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    </head>
+
+
+    <body>
+    												<h1>HOSPITAL REGISTRATION</h1>
+    	<div class="container">
+  			<form  action="connect.php" method="POST">
+  													<h2>INFORMATION</h2>
+  			<div class="row">
+      			<div class="col-25">
+      		    <label for="hospitalname">Name of Hospital*</label>
+     		    </div>
+      			<div class="col-75">
+        		<input required type="text" id="hname" name="hospitalname" placeholder="name of hospital...">
+      			</div>
+    		</div>
+
+    		<div class="row">
+      			<div class="col-25">
+      		    <label for="Accreditation">Accreditation*</label>
+     		    </div>
+      			<div class="col-75">
+        	    <input type="radio" name="instituteType" value="public"> Public<br>
+  				<input type="radio" name="instituteType" value="private"> Private<br>
+      			</div>
+    		</div>
+
+    		<div class="row">
+      			<div class="col-25">
+      		    <label for="HospitalRegistrationNumber">Hospital Registration Number*</label>
+     		    </div>
+      			<div class="col-75">
+        	    <input type="%Text" id="" name="HospitalRegistrationNumber" placeholder="Hospital Registration Number">
+      			</div>
+    		</div>
+
+    		<div class="row">
+      			<div class="col-25">
+      		    <label for="scannedcopy">Upload scanned copy of registration number*</label>
+     		    </div>
+      			<div class="col-75">
+        	    <form action="upload.php" method="post" enctype="multipart/form-data">
+				<input type="file" name="fileToUpload" id="fileToUpload">
+				<input type="submit" value="Upload Image" name="submit">
+				</form>
+      			</div>
+    		</div>
+    												<h2>ADDRESS</h2>
+    		<div class="row">
+      			<div class="col-25">
+      		    <label for="District">District</label>
+     		    </div>
+      			<div class="col-75">
+        	    <input type="text" id="" name="District" placeholder="District">
+      			</div>
+    		</div>
+
+    		<div class="row">
+      			<div class="col-25">
+      		    <label for="City">City</label>
+     		    </div>
+      			<div class="col-75">
+        	    <input type="text" id="" name="City" placeholder="city">
+      			</div>
+    		</div>
+
+    		<div class="row">
+      			<div class="col-25">
+      		    <label for="State">State</label>
+     		    </div>
+      			<div class="col-75">
+        	    <input type="text" id="" name="State" placeholder="State">
+      			</div>
+    		</div>
+    		
+
+   			 <div class="row">
+      			<div class="col-25">
+      		    <label for="PINcode">PIN Code*</label>
+     		    </div>
+      			<div class="col-75">
+        	    <input type="%Text" id="" name="PINcode">
+      			</div>
+    		</div>
+    											   <h2>CONTACT/HELPDESK OF HOSPITAL(FOR PUBLIC DOMAIN)</h2>
+
+			<div class="row">
+      			<div class="col-25">
+      		    <label for="Telephone">Telephone number*</label>
+     		    </div>
+      			<div class="col-75">
+        		<input type="tel" id="Telephone" name="Telephone" placeholder="+040">
+      			</div>
+    		</div>
+
+    		<div class="row">
+      			<div class="col-25">
+      		    <label for="Telephone">Mobile number</label>
+     		    </div>
+      			<div class="col-75">
+        		<input type="tel" id="Telephone" name="mobilenumber" placeholder="+091">
+      			</div>
+    		</div>
+
+    		<div class="row">
+      			<div class="col-25">
+      		    <label for="email">Email of the hospital</label>
+     		    </div>
+      			<div class="col-75">
+        		<input type="email" id="email" name="email" >
+      			</div>
+    		</div>
+
+    		<div class="row">
+      			<div class="col-25">
+      		    <label for="year">Established since(year)*</label>
+     		    </div>
+      			<div class="col-75">
+        		<input type="year" id="year" name="year" placeholder="yyyy">
+      			</div>
+    		</div>
+
+
+
+
+    		<div class="row">
+      			<button type="submit" value="submit">Submit</button>
+   		    </div>
+
+
+  			 </form>
+        </div>	
+
+
+    </body>
+
+
+ </html>   
