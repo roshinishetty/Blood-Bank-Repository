@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+        <title>DONOR REGISTRATION</title>
+        <link rel="stylesheet" type="text/css" href="hospital-register_css.css">  
+		<link rel="stylesheet" href="home_css/home_components.css">
+      <link rel="stylesheet" href="home_css/home_responsee.css">
+      <link rel="stylesheet" href="home_css/home_template-style.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    </head>
+
+
+    <body>
+    	 <header>
+         <nav>
+            <div class="line">
+               <div class="s-14 l-2">
+                  <p class="logo"><strong>Home</p>
+               </div>
+               <div class="top-nav s-12 l-10">
+                  <p class="nav-text">Custom menu text</p>
+                  <ul class="right">
+                     
+					      <li><a href="Logout.php">Logout</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+    	  <h1>DONOR REGISTRATION</h1>
+    	<div class="container">
+  			<form action="action_page.php">
+  													<h2>INFORMATION</h2>
+  			<div class="row">
+      			<div class="col-25">
+      		    <label for="hname">Height*</label>
+     		    </div>
+      			<div class="col-75">
+        		<input required type="text" id="hname" name="height" placeholder="in cms...">
+      			</div>
+    		</div>
+
+  			<div class="row">
+      			<div class="col-25">
+      		    <label for="hname">Weight*</label>
+     		    </div>
+      			<div class="col-75">
+        		<input required type="text" id="hname" name="weight" placeholder="in kgs...">
+      			</div>
+    		</div>
+
+			<div class="row">
+      			<div class="col-25">
+      		    <label for="scannedcopy">Upload blood report*</label>
+     		    </div>
+      			<div class="col-75">
+        	    <form action="upload.php" method="post" enctype="multipart/form-data">
+				<input type="file" name="fileToUpload" id="fileToUpload">
+				<input type="submit" value="Upload Image" name="submit">
+				</form>
+      			</div>
+    		</div>
+
+	<h3>NOTIFY ME</h3>	
+		
+		<div class="row">
+      			<div class="col-25">
+      		    <label for="weekdays">On</label>
+     		    </div>
+      			<div class="col-75">
+        	    <input form ="myForm"
+			type="checkbox" name="day"
+			value="monday"> Monday
+        	    <input form ="myForm"
+			type="checkbox" name="day"
+			value="tuesday"> Tuesday
+        	    <input form ="myForm"
+			type="checkbox" name="day"
+			value="wednesday"> Wednesday
+        	    <input form ="myForm"
+			type="checkbox" name="day"
+			value="thursday"> Thursday
+        	    <input form ="myForm"
+			type="checkbox" name="day"
+			value="friday"> Friday
+        	    <input form ="myForm"
+			type="checkbox" name="day"
+			value="saturday"> Saturday
+        	    <input form ="myForm"
+			type="checkbox" name="day"
+			value="sunday"> Sunday
+      			</div>
+    		</div>
+		
+			<div class="row">
+      			<div class="col-25">
+      		    <label for="timings">In The</label>
+     		    </div>
+      			<div class="col-75">
+        	    <input form ="myForm"
+			type="checkbox" name="time"
+			value="morning"> Morning
+        	    <input form ="myForm"
+			type="checkbox" name="time"
+			value="afternoon"> Afternoon
+        	    <input form ="myForm"
+			type="checkbox" name="time"
+			value="evening"> Evening
+        	    <input form ="myForm"
+			type="checkbox" name="time"
+			value="night"> Night
+         			</div>
+    		</div>
+		
+			<div class="row">
+      			<div class="col-25">
+      		    <label for="hname">Preferred Area</label>
+     		    </div>
+      			<div class="col-75">
+        		<input required type="text" id="hname" name="area" placeholder="enter area...">
+      			</div>
+    		</div>
+
+
+    		<div class="row">
+      			<a href="hospital-registered.php"><input type="submit" value="Submit"></a>
+   		    </div>
+
+
+
+
+
+    		
+    		
+
+
+
+
+
+
+
+
+
+
+
+
+
+  			 </form>
+        </div>	
+
+    </body>
+
+
+ </html>   
